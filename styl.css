@@ -73,6 +73,15 @@ header a {
   font-weight: 500;
   font-size: 1.4rem;
   background-color: #4af;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container .botones .grid:nth-child(1) {
@@ -84,6 +93,7 @@ header a {
 
 .container .botones .grid:nth-child(1):hover {
   background-color: #ff4135;
+  color: #fff;
 }
 
 .container .botones .grid:nth-child(18) {
@@ -99,10 +109,22 @@ header a {
 
 .container .botones .grid:hover {
   background-color: #5ee;
+  color: #222;
 }
 
 .container .botones .grid:active {
   border: 5px solid black;
   opacity: 0;
+}
+
+.container .botones .grid i {
+  width: 101%;
+  height: 100%;
+  font-size: 3rem;
+  background-color: #4af;
+}
+
+.container .botones .grid i:hover {
+  color: #fff;
 }
 /*# sourceMappingURL=styl.css.map */
