@@ -67,9 +67,9 @@ function guardarValor(){
 }
 //si es la primer operacion solo guarda el valor, si no lo resuelve y se prepara para la proxima operacion
 function operacion(valor){
+    
     if (digitador==''){
-        digitador = valor;    
-              
+        digitador = valor;                  
         guardarValor()
         console.log('operacion if', digitador , valorAnterior)     
     }else{        
