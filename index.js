@@ -7,15 +7,23 @@ const divResultado = document.querySelector('.resultado');
 const del = document.querySelector('.del');
 
 const calcuAtr = document.querySelector('.calcuAtr');
+const caraAtr = document.querySelector('.caraAtr')
 var valorAnterior = 0;
 var digitador = '';
+var atrValor=true;
 
 //activa y desactiva la calculadora random
 function calculadoraAtr(){
-    if (atrValor==true){
-        atrValor=false;
+    
+    caraAtr.classList.remove('caraAtr-blanco',"caraAtr-azul");
+    if (atrValor!=true){        
+        caraAtr.classList.add('caraAtr-azul');        
+        console.log('true');
+        atrValor=true;        
     }else{
-        atrValor=true;
+        atrValor=false;
+        caraAtr.classList.add('caraAtr-blanco');
+        console.log('false')       
     };
 };
 

@@ -95,15 +95,19 @@ header{
                 border: 5px solid black;                
                 opacity: 0;
             }
-            i{  width: 101%;
-                height: 100%;
-                font-size: 3rem ;                            
+           
+        }   
+        .caraAtr{  width: 101%;
+            height: 100%;
+            font-size: 3rem ;                          
+        &-azul{            
                 background-color: #4af;
-                &:hover{
-                    color: #fff;
-                }
-            }
-        }        
+               
+        }
+        &-blanco{
+            background-color: #fff;
+        }
+    }
     }    
 }
 

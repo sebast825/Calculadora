@@ -117,14 +117,17 @@ header a {
   opacity: 0;
 }
 
-.container .botones .grid i {
+.container .botones .caraAtr {
   width: 101%;
   height: 100%;
   font-size: 3rem;
+}
+
+.container .botones .caraAtr-azul {
   background-color: #4af;
 }
 
-.container .botones .grid i:hover {
-  color: #fff;
+.container .botones .caraAtr-blanco {
+  background-color: #fff;
 }
 /*# sourceMappingURL=styl.css.map */
