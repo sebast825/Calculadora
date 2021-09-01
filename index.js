@@ -7,7 +7,7 @@ const divResultado = document.querySelector('.resultado');
 const del = document.querySelector('.del');
 
 const calcuAtr = document.querySelector('.calcuAtr');
-var valorAnterior = [];
+var valorAnterior = 0;
 var digitador = '';
 
 function calculadoraAtr(){
@@ -112,24 +112,24 @@ const numeroRandomAtr = ()=>{
 
 var numRandomDivisor = []
 //para el divisor random
+
 const numeroRandomDigitadorAtr = ()=>{
-    console.log('entro digitador random');
+   
     h=Math.floor(Math.random()*4)+0;  
         numRandomDivisor[0]=(h);
-    if (digitador==''){
-        (console.log('no hay digitador'))
-        devolverDigitador(h);
-        guardarValor();
+        console.log('entro digitador random',h)
+    if (digitador==''){                
+        if( input.value==''){
+            devolverDigitador(h);
+        }else{
+            devolverDigitador(h);
+            guardarValor()
+        }
     } else{
-        console.log('hay digitador')
-        resultado();
+        resultado()
         devolverDigitador(h);
-
-    };
-    
-    
+    };       
 };
-
 
 
 
@@ -179,6 +179,8 @@ function igualFunc(){
     console.log('valor input: ',input.value , 'valor anterior:', valorAnterior[0], 'digiador', digitador);
          
     resultado();
+    //si no se pone el digitador vacio al hacer una cuenta despues del = se rompe
+    digitador='';
     console.log('valor input: ',input.value , 'valor anterior:', valorAnterior, 'digiador', digitador);
 };
 
