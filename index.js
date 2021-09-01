@@ -10,6 +10,7 @@ const calcuAtr = document.querySelector('.calcuAtr');
 var valorAnterior = 0;
 var digitador = '';
 
+//activa y desactiva la calculadora random
 function calculadoraAtr(){
     if (atrValor==true){
         atrValor=false;
@@ -86,8 +87,7 @@ function operacion(valor){
         resultado();
         digitador = valor;
     }
-    else if (digitador==''){
-        
+    else if (digitador==''){        
         digitador = valor;                  
         guardarValor();
         console.log('operacion if', digitador , valorAnterior); 
@@ -118,13 +118,13 @@ const numeroRandomDigitadorAtr = ()=>{
     h=Math.floor(Math.random()*4)+0;  
         numRandomDivisor[0]=(h);
         console.log('entro digitador random',h)
-    if (digitador==''){                
-        if( input.value==''){
-            devolverDigitador(h);
-        }else{
+    if (digitador==''){              
+        
+            
+        
             devolverDigitador(h);
             guardarValor()
-        }
+        
     } else{
         resultado()
         devolverDigitador(h);
