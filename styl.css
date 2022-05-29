@@ -130,4 +130,10 @@ header a {
 .container .botones .caraAtr-blanco {
   background-color: #fff;
 }
+
+footer{
+  color: #fff;
+  
+  margin: 0 1rem;
+}
 /*# sourceMappingURL=styl.css.map */
