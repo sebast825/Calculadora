@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+          box-sizing: content-box;
   background-color: #ad4135;
 }
 
@@ -121,6 +121,8 @@ header a {
   /* width: 101%;
   height: 100%; */
   font-size: 2.5rem;
+  border-radius: 50%;
+
 }
 
 .container .botones .caraAtr-azul {
