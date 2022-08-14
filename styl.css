@@ -108,7 +108,7 @@ header a {
 }
 
 .container .botones .grid:hover {
-  background-color: #5ee;
+  background-color: #6ef;
   color: #222;
 }
 
@@ -118,9 +118,9 @@ header a {
 }
 
 .container .botones .caraAtr {
-  width: 101%;
-  height: 100%;
-  font-size: 3rem;
+  /* width: 101%;
+  height: 100%; */
+  font-size: 2.5rem;
 }
 
 .container .botones .caraAtr-azul {
